@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: 'poppins', sans-serif;
+}
+
+.btn {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.h4,
+h4 {
+  font-size: calc(10px + .4vw);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1;
+  color: #000;
+}
+
+.printCV {
+  font-size: 30px;
+  color: #fff;
+  background-color: #0d6efd;
+  width: 150px;
+  border-radius: 10px
+}
+
+.cv .container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgb(0, 0, 0, .1);
+  margin: 50px auto;
+  padding: 0;
+}
+
+.cv .container .left {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+  width: 100%;
+}
+
+.cv .text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255, .2);
+}
+
+.cv .text .pic {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.cv .text h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
+
+.cv .text span {
+  font-size: .7em;
+  font-weight: 300;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.cv .text .pic img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cv .info {
+  padding-top: 40px;
+}
+
+.cv .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.cv .info ul {
+  position: relative;
+}
+
+.cv .info #fFacebook,
+.cv .info #lLinkedin {
+  cursor: pointer;
+}
+
+.cv .info ul li {
+  list-style: none;
+  position: relative;
+  margin: 10px 0px;
+}
+
+.cv .info ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.cv .info ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+
+.cv .edu .title {
+  margin-top: 40px;
+}
+
+.cv .edu li {
+  margin-bottom: 15px;
+  list-style: square;
+  color: #03a9f4;
+}
+
+
+/* .cv .edu h5 {
+    color: #03a9f4;
+    font-weight: 500;
+    text-transform: uppercase;
+} */
+
+.cv .edu p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1em;
+}
+
+
+/* 
+.cv .edu h3 {
+    color: #fff;
+    font-weight: 300;
+} */
+
+.cv .lang {
+  margin-top: 30px;
+}
+
+.cv .lang li {
+  list-style: square;
+  color: #03a9f4;
+  padding: 10px;
+}
+
+.cv .lang li span {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+/* about */
+
+.cv .container .right {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+
+.cv .right .about h2 {
+  text-transform: uppercase;
+  font-weight: 750;
+  letter-spacing: 1px;
+  color: #054969;
+}
+
+.cv .right .about p {
+  color: #333;
+  line-height: 15px;
+  font-size: 16px;
+  line-height: 38px;
+  margin: 12px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.cv .right .exp h2 {
+  text-transform: uppercase;
+  font-weight: 750;
+  letter-spacing: 1px;
+  color: #054969;
+  margin-top: 20px;
+}
+
+.cv .exp .works h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 25px;
+  color: #054969;
+}
+
+.cv .exp .skills h2 {
+  text-transform: uppercase;
+  font-weight: 750;
+  letter-spacing: 1px;
+  color: #054969;
+  margin-top: 20px;
+}
+
+.cv .exp li {
+  padding: 15px;
+  list-style: square;
+}
+
+.squar {
+  color: #0d6efd;
+  font-size: 25px;
+}
+
+.cv .exp .skills li h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #003147;
+}
+
+
+/* inputs */
+
+.cv .data {
+  min-height: 600;
+  background-color: #fff;
+  width: 100%;
+  margin: 50px;
+}
+
+.cv .data input {
+  width: 90%;
+  height: 90px;
+  margin: 5px 6px;
+  padding: 0 5px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.cv .data .submit {
+  height: 30px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.cv .data h4 {
+  text-transform: uppercase;
+  font-weight: 1em;
+  color: #1a6283;
+}
+
+.btnN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: 0.5 all ease-in-out;
+}
+
+.printCV:hover {
+  color: #fff;
+  letter-spacing: 1px;
+}
+/* Header Section */
+header {
+  background-color: #003366; /* Dark Blue */
+  padding: 20px 0;
+}
+
+header .logo h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header .navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+header .navbar ul li a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+header .navbar ul li a:hover {
+  background-color: #00509e; /* Lighter blue hover effect */
+  border-radius: 5px;
+}
+/* Footer Section */
+footer {
+  background-color: #003366; /* Dark Blue */
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+footer .footer-content p {
+  font-size: 14px;
+}
+footer .footer-nav ul li a:hover {
+  background-color: #00509e;
+  border-radius: 5px;
+}
